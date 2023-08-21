@@ -1,0 +1,291 @@
+
+/* HomePage */
+.App {
+  text-align: center;
+  Background:white;
+
+  /*background: linear-gradient(to bottom, #222831, #00ADB5);*/
+ 
+  
+}
+.App-intro{
+  float:left;
+  min-height: 95vh;
+  max-height: 90%;
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex:1;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  margin:10px;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 20px;
+  animation: loading 1.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+
+
+
+.App-intro:hover {
+  transform: translateX(+10%) scale(1.2);
+
+}
+
+.App-Link {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  max-width: 1200px;
+  padding: 20px;
+  border-radius: 20px;
+
+  
+}
+
+.home-box{
+  background-color: #00ADB5;
+  color: Black;
+  text-align: center;
+  min-height: 10vh;
+  min-width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  
+}
+
+
+.home-box:hover {
+  transform: scale(1.1); 
+}
+
+
+.App-header {
+ 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+
+}
+.App-links {
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  border-radius: 20px;
+}
+
+.App-link {
+  color: #000000;
+}
+/*NavBar*/
+.navbar {
+  background-color: #393E46;
+  color: white;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-height: 30px;
+}
+.navbar-link{
+  flex: 1;
+  padding: 1rem;  
+ 
+ 
+  
+}
+.navbar h1{
+  margin-right:10%;
+  
+
+}
+a:visited {
+  color: white;
+}
+
+/*About Page*/
+.About{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+
+}
+.About-Content{
+  display: grid;
+  grid-template-columns: repeat(2, 50%); 
+  grid-gap: 20px;
+  padding: 20px;
+  
+}
+.About-Box{
+  flex: 1 1 0px;
+  color: black;
+  text-align: center;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border-style: solid;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.About-Box.active{
+  transform: scale(1);
+  z-index: 1;
+}
+.About-Box.shrink {
+  transform: scale(0.8);
+ 
+}
+.circle-box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: arcAnimation 2s linear infinite;
+}
+
+@keyframes arcAnimation {
+  0%,100%{
+    transform: translate(-200px, 0px) ;
+  }
+  25%{
+    transform: translate(0px, -30px) ;
+
+  }
+  50%{
+    transform: translate(200px, 0px) ;
+
+  }
+  75%{
+    transform: translate(0px, -30px) ;
+
+  }
+}
+/*Education*/
+.Education-Box{
+  flex: 1 1 0px;
+  color: black;
+  text-align: center;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 5%;
+  border-style: solid;
+  border-radius: 20px;
+}
+/*Skills*/
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.skills-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+
+}
+
+
+/*Experience*/
+.Project{
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  overflow: hidden;
+}
+.Project-Box{
+  flex: 1 1 0px;
+  color: black;
+  text-align: center;
+  min-height: 10vh;
+  width:40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border-style: solid;
+ 
+}
+.prod-dsc{
+background-color: Green;
+margin: 10px;
+
+}
+.prod-img{
+  border: solid black;
+  min-height: 40vh;
+  background-color: Green;
+}
+.prod-logs{
+  background-color: Green;
+
+}
+.prod-buttons{
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  overflow: hidden;
+
+
+}
+.prod-button{
+display:flex;
+flex-direction: row;
+margin:20px
+
+}
+.contact{
+  background-color: #393E46;
+  color: white;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+
+
+}
