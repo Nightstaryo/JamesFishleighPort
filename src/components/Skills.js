@@ -3,11 +3,9 @@ import React, { useState } from 'react';
 
 
 const Skills=() =>{
-  const [expandedIndex, setExpandedIndex] = useState(null);
 
-  const handleBoxClick = (index) => {
-    setExpandedIndex(index === expandedIndex ? null : index);
-  };
+
+
   const boxes = [
     {skill:"Java",
     img:""

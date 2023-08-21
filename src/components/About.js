@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from 'react';
+import React, {  useState } from 'react';
 import {HashLink as Link} from "react-router-hash-link";
 const About=() =>{
   const [activeBox, setActiveBox] = useState(null);
