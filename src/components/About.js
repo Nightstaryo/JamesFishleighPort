@@ -32,7 +32,7 @@ const About=() =>{
             <h4>Gcses:</h4>
             <p>I Achieved 13 Gcses ranging from A-C Grade</p>
             <h4>A-levels:</h4>
-            <p>I completed 3 A-Levels in Maths, Computer Science and Geograpyh</p>
+            <p>I completed 3 A-Levels in Maths, Computer Science and Geography</p>
             <h4>Univeristy:</h4>
             <p>I Achieved a First Class Degree in Computer Science from Northumbria Univeristy</p>
             </div>
