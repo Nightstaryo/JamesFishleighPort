@@ -25,7 +25,7 @@ const Experience=() =>{
           <h1>Dissertaion Project</h1>
           <div className="prod-img"> <img
         src={DissertationIMG}
-        alt="Description of the image"
+        alt="Dissertation site in action"
         style={{
           maxWidth: '100%'// Set the maximum width
          
